@@ -26,14 +26,6 @@ Window {
         }
 
         Button {
-            id: jsonButton
-            text: "SAVE"
-            opacity: 0.7
-            anchors.left: rButton.left
-            onPressed: { saveDialog.visible = true }
-        }
-
-        Button {
             id: readButton
             text: "READ"
             opacity: 0.7
@@ -79,13 +71,4 @@ Window {
                 onAccepted: { FileReader.readFile(fileUrl) }
         }
 
-        FileDialog {
-                id: saveDialog
-                visible: false
-                title: "save"
-                selectFolder: true
-                folder: "file:/home/"
-                nameFilters: ["All files (*)"]
-                onAccepted: { FileReader.saveToJson(folder) }
-        }
     }
