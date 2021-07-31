@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Pointer.qml</file>
+        <file>MapModule.qml</file>
+        <file>loc.png</file>
+        <file>Marker.qml</file>
+    </qresource>
+</RCC>
